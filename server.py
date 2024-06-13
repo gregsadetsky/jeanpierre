@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    all_images = Path("/images").glob("*")
+    all_images = Path("/images").glob("*.jpg")
     # build file names + date modified into list
     images = [(str(img.name), img.stat().st_mtime) for img in all_images]
     # sort by date modified
