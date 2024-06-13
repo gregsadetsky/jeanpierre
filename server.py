@@ -16,14 +16,14 @@ def hello_world():
 
     html = "<html><body>"
     for img in images:
-        html += f'<img src="/img{img[0]}" width="300">'
+        html += f'<img src="/img/{img[0]}" width="300">'
     html += "</body></html>"
     return html
 
 
 # dynamically return any image
 @app.route("/img/<path:img>")
-def img():
+def img(img):
     # return send_file("/images/image.jpg", mimetype="image/jpeg")
     return send_file(f"/images/${img}", mimetype="image/jpeg")
 
