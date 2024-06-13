@@ -12,7 +12,7 @@ def hello_world():
     # build file names + date modified into list
     images = [(str(img.name), img.stat().st_mtime) for img in all_images]
     # sort by date modified
-    images.sort(key=lambda x: x[1])
+    images.sort(key=lambda x: x[1], reverse=True)
 
     html = "<html><body>"
     for img in images:
