@@ -25,7 +25,7 @@ def hello_world():
 @app.route("/img/<path:img>")
 def img(img):
     # return send_file("/images/image.jpg", mimetype="image/jpeg")
-    return send_file(f"/images/${img}", mimetype="image/jpeg")
+    return send_file(f"/images/{img}", mimetype="image/jpeg")
 
 
 if __name__ == "__main__":
