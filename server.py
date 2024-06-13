@@ -16,7 +16,7 @@ def hello_world():
 
     html = "<html><body>"
     for img in images:
-        html += f'<img src="/img/{img[0]}" width="300">'
+        html += f'<img src="/img/{img[0]}" width="300"><br/>'
     html += "</body></html>"
     return html
 
