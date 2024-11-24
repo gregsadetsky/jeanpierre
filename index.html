@@ -1,12 +1,32 @@
-<html><body>
+<html>
+<script>
+  function makeThePicturesMove() {
+    let x;
+    let i = 0;
+    x = setInterval(() => {
+      document.body.scrollTop = 1950 + 240 * i
+      i++;
+      if (document.body.scrollTop > 169650) {
+        clearInterval(x)
+      }
+    }, 100)
+  }
+</script>
+<body>
 
-<p>"jean-pierre" was a project on june 12th & 13th 2024 of a livestreaming shoe built with a raspberry pi and a web camera.</p>
+<p>"<b>jean-pierre</b>" was a project on june 12th & 13th 2024 of a livestreaming shoe built with a raspberry pi and a web camera.</p>
 
 <p>it ran its own web server, connected to the internet via my phone's hotspot.</p>
 
 <p>the web server running on the raspberry pi was managed by <a href="https://letsdisco.dev/">disco</a>.</p>
 
 - a project by <a href="https://greg.technology">greg technology</a>
+
+<hr>
+
+<button onClick="makeThePicturesMove()" style="margin-top:50px;margin-bottom:50px;font-size:30px">start the jeanpierre movie!!</button><br/><br/>
+
+(thanks to Brandon Sprague for the movie code)
 
 <hr>
 
