@@ -1,5 +1,5 @@
 # Jean-Pierre
 
-![jean-pierre](photos-of-it/GP620TuXcAAvYoX.jpeg "jean-pierre")
+**[see it!!!](https://jeanpierre.greg.technology/)**
 
-[see it!!!](https://jeanpierre.greg.technology/)
+<img src="photos-of-it/GP620TuXcAAvYoX.jpeg" alt="jean-pierre" width="200"/>
